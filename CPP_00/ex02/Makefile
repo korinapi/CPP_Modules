@@ -1,4 +1,4 @@
-NAME = phoneBook
+NAME = account
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address -g
 RM = rm -rf
@@ -10,8 +10,8 @@ GRAY = \033[33m
 RESET = \033[0m
 CURSIVE = \033[33;3m
 
-SRCS = phoneBook.cpp main.cpp contact.cpp
-INCLUDE = -I phoneBook.hpp
+SRCS = Account.cpp tests.cpp
+INCLUDE = -I Account.hpp
 
 all: $(NAME)
 
