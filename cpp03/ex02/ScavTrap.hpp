@@ -6,7 +6,7 @@
 /*   By: cpuiu <cpuiu@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/22 17:13:25 by cpuiu             #+#    #+#             */
-/*   Updated: 2024/06/22 18:20:19 by cpuiu            ###   ########.fr       */
+/*   Updated: 2024/06/28 11:29:00 by cpuiu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@ class ScavTrap: public ClapTrap{
 	public:
 		ScavTrap(const std::string& name);
 		~ScavTrap();
-		void attack(const std::string& target) override; // Add the 'override' keyword to indicate that this function overrides a base class member
+		void	attack(const std::string& target);
+		void	guardGate();
 };
 
 #endif
